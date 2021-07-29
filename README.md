@@ -14,5 +14,5 @@ Characteristcs that I will try to put the most possible:
 
 ## Updates
 
-# Day 001 -> Start of the project
+### Day 001 -> Start of the project
 - Basic plan of the project
