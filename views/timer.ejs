@@ -7,6 +7,18 @@
     <title>Timer</title>
 </head>
 <body>
-    
+    <div class="popup-setTime" id="popup" style="display: none;"> 
+        <input type="number" name="hours" id="h" min=0 placeholder="Hours">
+        <input type="number" name="minutes" id="m" min=0 max=59 placeholder="Minutes">
+        <input type="number" name="seconds" id="s" min=0 max=59 placeholder="Seconds">
+        <button id="popup-submit">Set</button>
+    </div>
+
+    <h1>Timer</h1>
+    <p id="time">00:00:00</p>
+    <button id="set">Set Timer</button>
+    <button id="play">&#9658;</button>
+    <button id="restart">&#8634;</button>
+    <script src="/assets/timer.js"></script>
 </body>
 </html>

@@ -16,3 +16,6 @@ Characteristcs that I will try to put the most possible:
 
 ### Day 001 -> Start of the project
 - Basic plan of the project
+- Started the project, by organizating and starting the chronometer part
+### Day 002 -> Chronometer JS and basic HTML
+- Full chronometer JS functions
