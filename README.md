@@ -19,4 +19,6 @@ Characteristcs that I will try to put the most possible:
 - Started the project, by organizating and starting the chronometer part
 ### Day 002 -> Chronometer JS and basic HTML
 - Full chronometer JS functions
+### Day 003 -> Alarm and Timer raw JS
+- Full raw alarm and timer JS
 
