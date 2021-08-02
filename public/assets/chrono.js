@@ -47,3 +47,13 @@ document.getElementById('restart').addEventListener('click', () => {
     document.getElementById('time').innerText = '00:00:00'
     pause()
 })
+
+// Keyboard shortcuts
+document.onkeydown = (e) => {
+    if (e.key === " " || e.key === "Enter"){
+        document.getElementById('play').click()
+    }
+    if (e.key === "r"){
+        document.getElementById('restart').click()
+    }
+}

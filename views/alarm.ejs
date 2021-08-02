@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alarm</title>
+    <link href="/assets/style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
     <div class="popup-setTime" id="popup" style="display: none;"> 
@@ -14,12 +15,17 @@
         <button id="popup-submit">Set</button>
     </div>
 
-    <h1>Alarm</h1>
-    <% let time = new Date() %>
-    <p id="time"><%= time.getHours() %>:<%= time.getMinutes() %>:<%= time.getSeconds() %></p>
-    <button id="set">Set Alarm</button>
-    <button id="play">&#9658;</button>
-    <button id="cancel" style="display: none">&#8634;</button>
+    <%- include('partials/dash.ejs') %>
+
+    <div class="wrapper">
+        <h1>Alarm</h1>
+        <% let time = new Date() %>
+        <p id="time"><%= time.getHours() %>:<%= time.getMinutes() %>:<%= time.getSeconds() %></p>
+        <button id="set">Set Alarm</button>
+        <button id="play">&#9658;</button>
+        <button id="cancel" style="display: none">&#8634;</button>
+    </div>
+    
     <script src="/assets/alarm.js"></script>
 </body>
 </html>

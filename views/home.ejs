@@ -5,11 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Page</title>
+    <link href="/assets/style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-    <h1>Home</h1>
-    <a href="/alarm">Alarm</a>
-    <a href="/chronometer">Chronometer</a>
-    <a href="/timer">Timer</a>
+    <%- include('partials/dash.ejs') %>
+    <div class="wrapper">
+        <h1>Home</h1>
+    </div>
 </body>
 </html>
