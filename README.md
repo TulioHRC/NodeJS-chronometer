@@ -21,4 +21,5 @@ Characteristcs that I will try to put the most possible:
 - Full chronometer JS functions
 ### Day 003 -> Alarm and Timer raw JS
 - Full raw alarm and timer JS
-
+### Day 004 -> Starting CSS and HTML part
+- Basic CSS and HTML
