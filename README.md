@@ -26,3 +26,9 @@ Characteristcs that I will try to put the most possible:
 ### Day 005 -> Full CSS and HTML
 - CSS and HTML of all the parts
 - CSS on the popup
+![ad](https://user-images.githubusercontent.com/62257920/128102966-69cf5b35-ff6c-4476-bb15-821948338040.png)
+
+
+Thing I haven't done yet:
+- Responsive CSS
+- Alert on Alarm and timer
