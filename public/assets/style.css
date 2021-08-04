@@ -230,3 +230,38 @@ button:active {
     position: absolute;
     bottom: 40%;
 }
+
+/* Responsive */
+
+@media only screen and (max-width:768px) { /* Cellphone */
+	.dash {
+        height: 100px;
+    }
+    .links {
+        font-size: 18px;
+        padding-right: 15%;
+        padding-left: 0%;
+    }
+    #homeImage {
+        display: none;
+    }
+    .wrapper {
+        width: 90%;
+        left: 5%;
+        top: 102px;
+    }
+    h1 {
+        font-size: 44px;
+    }
+    #time {
+        font-size: 80px;
+    }
+    button {
+        padding:8px 15.5px;
+        margin-right: 25px;
+        margin-left: 25px
+    }
+    h2 {
+        font-size: 44px;
+    }
+}
