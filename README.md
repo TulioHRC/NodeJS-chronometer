@@ -23,3 +23,6 @@ Characteristcs that I will try to put the most possible:
 - Full raw alarm and timer JS
 ### Day 004 -> Starting CSS and HTML part
 - Basic CSS and HTML
+### Day 005 -> Full CSS and HTML
+- CSS and HTML of all the parts
+- CSS on the popup
