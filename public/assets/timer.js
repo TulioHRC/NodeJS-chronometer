@@ -29,10 +29,22 @@ document.getElementById('close').addEventListener('click', ()=>{
 let playing = 0
 let play
 
+// and alarm
+
+document.getElementById('ok').addEventListener('click', ()=>{
+    document.getElementById('popupAudio').style.display = 'none'
+    document.getElementById('main').style.opacity = '1'
+    document.getElementById('audio').pause()
+    document.getElementById('audio').currentTime = 0
+})
+
 function timerEnd(){
     document.getElementById('time').innerText = '00:00:00'
     pause()
-    alert('a')
+
+    document.getElementById('audio').play()
+    document.getElementById('popupAudio').style.display = 'block'
+    document.getElementById('main').style.opacity = '0.3'
 }
 
 function start(){

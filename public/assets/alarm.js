@@ -22,11 +22,20 @@ document.getElementById('close').addEventListener('click', ()=>{
     document.getElementById('main').style.opacity = '1'
 })
 
+document.getElementById('ok').addEventListener('click', ()=>{
+    document.getElementById('popupAudio').style.display = 'none'
+    document.getElementById('main').style.opacity = '1'
+    document.getElementById('audio').pause()
+    document.getElementById('audio').currentTime = 0
+})
+
 // Infinite Loop
 let updateTime = function(){
     time = new Date()
     if (`${time.getHours()}:${time.getMinutes()}:${time.getSeconds()}` === alarm) {
-        alert('alarm')
+        document.getElementById('audio').play()
+        document.getElementById('popupAudio').style.display = 'block'
+        document.getElementById('main').style.opacity = '0.3'
     }
     // Time string style
     time = [time.getHours(),time.getMinutes(),time.getSeconds()]
