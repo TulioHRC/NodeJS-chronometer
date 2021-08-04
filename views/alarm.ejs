@@ -8,24 +8,31 @@
     <link href="/assets/style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-    <div class="popup-setTime" id="popup" style="display: none;"> 
-        <input type="number" name="hours" id="h" min=0 placeholder="Hour">
-        <input type="number" name="minutes" id="m" min=0 max=59 placeholder="Minutes">
-        <input type="number" name="seconds" id="s" min=0 max=59 placeholder="Seconds">
-        <button id="popup-submit">Set</button>
-    </div>
+    <div id="main">
+        <%- include('partials/dash.ejs') %>
 
-    <%- include('partials/dash.ejs') %>
-
-    <div class="wrapper">
-        <h1>Alarm</h1>
-        <% let time = new Date() %>
-        <p id="time"><%= time.getHours() %>:<%= time.getMinutes() %>:<%= time.getSeconds() %></p>
-        <button id="set">Set Alarm</button>
-        <button id="play">&#9658;</button>
-        <button id="cancel" style="display: none">&#8634;</button>
+        <div class="wrapper">
+            <h1>Alarm</h1>
+            <% let time = new Date() %>
+            <p id="time"><%= time.getHours() %>:<%= time.getMinutes() %>:<%= time.getSeconds() %></p>
+            <button id="set">Set Alarm</button>
+            <button id="play">&#9658;</button>
+            <button id="cancel" style="display: none">&#8634;</button>
+        </div>
     </div>
     
+    <div class="popup-setTime" id="popup" style="display: none;">
+        <div class="ValInputs">
+            <p class="PInp">Hours: <input type="number" class="ValInp" name="hours" id="h" min=0 placeholder="Hour"></p>
+            <p class="PInp">Minutes: <input type="number" class="ValInp" name="minutes" id="m" min=0 max=59 placeholder="Minutes"></p>
+            <p class="PInp">Seconds: <input type="number" class="ValInp" name="seconds" id="s" min=0 max=59 placeholder="Seconds"></p>
+        </div>
+        <div class="buttonsPopup">
+            <button id="popup-submit">Set</button>
+            <button id="close">Cancel</button>
+        </div>
+    </div>
+
     <script src="/assets/alarm.js"></script>
 </body>
 </html>

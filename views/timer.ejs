@@ -8,21 +8,28 @@
     <link href="/assets/style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-    <div class="popup-setTime" id="popup" style="display: none;"> 
-        <input type="number" name="hours" id="h" min=0 placeholder="Hours">
-        <input type="number" name="minutes" id="m" min=0 max=59 placeholder="Minutes">
-        <input type="number" name="seconds" id="s" min=0 max=59 placeholder="Seconds">
-        <button id="popup-submit">Set</button>
+    <div id="main">
+        <%- include('partials/dash.ejs') %>
+
+        <div class="wrapper">
+            <h1>Timer</h1>
+            <p id="time">00:00:00</p>
+            <button id="set">Set Timer</button>
+            <button id="play">&#9658;</button>
+            <button id="restart">&#8634;</button>
+        </div>    
     </div>
 
-    <%- include('partials/dash.ejs') %>
-
-    <div class="wrapper">
-        <h1>Timer</h1>
-        <p id="time">00:00:00</p>
-        <button id="set">Set Timer</button>
-        <button id="play">&#9658;</button>
-        <button id="restart">&#8634;</button>
+    <div class="popup-setTime" id="popup" style="display: none;">
+        <div class="ValInputs">
+            <p class="PInp"><input type="number" class="ValInp" name="hours" id="h" min=0 placeholder="Hour">   Hours</p>
+            <p class="PInp"><input type="number" class="ValInp" name="minutes" id="m" min=0 max=59 placeholder="Minutes"> Minutes</p>
+            <p class="PInp"><input type="number" class="ValInp" name="seconds" id="s" min=0 max=59 placeholder="Seconds"> Seconds</p>
+        </div>
+        <div class="buttonsPopup">
+            <button id="popup-submit">Set</button>
+            <button id="close">Cancel</button>
+        </div>
     </div>
     
     <script src="/assets/timer.js"></script>

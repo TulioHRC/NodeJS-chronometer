@@ -1,6 +1,7 @@
 document.getElementById('set').addEventListener('click', () => {
     // PopUp, div with display: none
     document.getElementById('popup').style.display = 'block'
+    document.getElementById('main').style.opacity = '0.3'
 })
 
 document.getElementById('popup-submit').addEventListener('click', () => {
@@ -16,6 +17,12 @@ document.getElementById('popup-submit').addEventListener('click', () => {
     document.getElementById('time').innerText = `${time[0]}:${time[1]}:${time[2]}`
 
     document.getElementById('popup').style.display = 'none'
+    document.getElementById('main').style.opacity = '1'
+})
+
+document.getElementById('close').addEventListener('click', ()=>{
+    document.getElementById('popup').style.display = 'none'
+    document.getElementById('main').style.opacity = '1'
 })
 
 // Time go

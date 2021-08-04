@@ -8,13 +8,16 @@
     <link href="/assets/style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-    <%- include('partials/dash.ejs') %>
-    <div class="wrapper">
-        <h1>Chronometer</h1>
-        <p id="time">00:00:00</p>
-        <button id="play">&#9658;</button>
-        <button id="restart">&#8634;</button>
+    <div class="main">
+        <%- include('partials/dash.ejs') %>
+        <div class="wrapper">
+            <h1>Chronometer</h1>
+            <p id="time">00:00:00</p>
+            <button id="play">&#9658;</button>
+            <button id="restart">&#8634;</button>
+        </div>
     </div>
+    
     
     <script src="/assets/chrono.js"></script>
 </body>
